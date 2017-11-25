@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A9299CCC04D8F6AAE7253A3 /* Pods_LifeGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98128AE488A79DFF91B9FD98 /* Pods_LifeGuide.framework */; };
 		90FF29051FC9ABE100F3C23E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF29041FC9ABE100F3C23E /* AppDelegate.swift */; };
 		90FF29071FC9ABE100F3C23E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF29061FC9ABE100F3C23E /* ViewController.swift */; };
 		90FF290A1FC9ABE100F3C23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90FF29081FC9ABE100F3C23E /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		509472E173A82DD637F707DA /* Pods-LifeGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-LifeGuide/Pods-LifeGuide.release.xcconfig"; sourceTree = "<group>"; };
 		90FF29011FC9ABE100F3C23E /* LifeGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FF29041FC9ABE100F3C23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90FF29061FC9ABE100F3C23E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		90FF29201FC9ABE100F3C23E /* LifeGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FF29241FC9ABE100F3C23E /* LifeGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGuideUITests.swift; sourceTree = "<group>"; };
 		90FF29261FC9ABE200F3C23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98128AE488A79DFF91B9FD98 /* Pods_LifeGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D292B9E86D8CE32D5EE31E /* Pods-LifeGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LifeGuide/Pods-LifeGuide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9299CCC04D8F6AAE7253A3 /* Pods_LifeGuide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18740B98F955F9D8D69BBD52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0D292B9E86D8CE32D5EE31E /* Pods-LifeGuide.debug.xcconfig */,
+				509472E173A82DD637F707DA /* Pods-LifeGuide.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E8C92BA05FE2DEC95231BAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98128AE488A79DFF91B9FD98 /* Pods_LifeGuide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		90FF28F81FC9ABE100F3C23E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				90FF29181FC9ABE100F3C23E /* LifeGuideTests */,
 				90FF29231FC9ABE100F3C23E /* LifeGuideUITests */,
 				90FF29021FC9ABE100F3C23E /* Products */,
+				18740B98F955F9D8D69BBD52 /* Pods */,
+				6E8C92BA05FE2DEC95231BAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90FF29291FC9ABE200F3C23E /* Build configuration list for PBXNativeTarget "LifeGuide" */;
 			buildPhases = (
+				95B11E7AD5729DC7ABF6C1BE /* [CP] Check Pods Manifest.lock */,
 				90FF28FD1FC9ABE100F3C23E /* Sources */,
 				90FF28FE1FC9ABE100F3C23E /* Frameworks */,
 				90FF28FF1FC9ABE100F3C23E /* Resources */,
+				F32F2F6BE179880552319694 /* [CP] Embed Pods Frameworks */,
+				BF653451BD9841E37FF1CE86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95B11E7AD5729DC7ABF6C1BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LifeGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF653451BD9841E37FF1CE86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeGuide/Pods-LifeGuide-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F32F2F6BE179880552319694 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LifeGuide/Pods-LifeGuide-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LifeGuide/Pods-LifeGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90FF28FD1FC9ABE100F3C23E /* Sources */ = {
@@ -424,9 +515,11 @@
 		};
 		90FF292A1FC9ABE200F3C23E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D292B9E86D8CE32D5EE31E /* Pods-LifeGuide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5UE9J6587;
 				INFOPLIST_FILE = LifeGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeff.LifeGuide;
@@ -438,9 +531,11 @@
 		};
 		90FF292B1FC9ABE200F3C23E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509472E173A82DD637F707DA /* Pods-LifeGuide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5UE9J6587;
 				INFOPLIST_FILE = LifeGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeff.LifeGuide;

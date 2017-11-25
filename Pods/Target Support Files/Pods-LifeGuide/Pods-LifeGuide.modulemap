@@ -1,0 +1,6 @@
+framework module Pods_LifeGuide {
+  umbrella header "Pods-LifeGuide-umbrella.h"
+
+  export *
+  module * { export * }
+}
